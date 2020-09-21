@@ -1,0 +1,24 @@
+color blue/green yellow/red white/magenta white/magenta
+timeout 400
+default /default
+
+
+title Hiren15.2 FIRST ISO FILE
+map --mem (pd)/Hiren15.2.iso (0xFF)
+map --hook
+root (0xFF)
+chainloader (0xFF)
+
+title Hiren9 SECOND ISO FILE
+map --mem (pd)/Hiren9.iso (0xFF)
+map --hook
+root (0xFF)
+chainloader (0xFF)
+
+title reboot
+reboot
+
+
+title PowerOff
+halt
+
